@@ -3,12 +3,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 class Dashboard extends CI_Controller {
-//Validating login
-// public function __construct(){
-// parent::__construct();
-// if(!$this->session->userdata('uid'))
-// redirect('signin');
-// }
+
 public function index(){
 
 if($this->session->userdata('uid')!=''){
