@@ -15,12 +15,9 @@ class Signin extends CI_controller {
 
             if ($user && password_verify($password, $user->Password)) {
 
-                $session_data = array(
-                    'emailid' => $email
-                        );
-                    $this->session->set_userdata($session_data);
-                    
-                    redirect('dashboard'); 
+             $this->session->set_userdata('uid',$user->id);
+             $this->session->set_userdata('fname',$user->FirstName);
+             redirect('dashboard');
             } else {
                 
                 $this->session->set_flashdata('error', 'Invalid login details. Please try again.');

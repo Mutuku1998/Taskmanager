@@ -106,7 +106,7 @@ body {
 <h2>Welcome Back</h2>
 <form>
 <div class="form-group" style="font-size:20px; color:#000;" align="center">
-    Howdy <?php echo $userdata; ?>
+    Howdy  <?php echo $firstname?> 
 </div>
 
 	    
